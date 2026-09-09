@@ -1,6 +1,6 @@
 {
   "baseUrl": "https://akashagopine.github.io/opine-faq-videos",
-  "generated": "2026-09-09T18:40:15Z",
+  "generated": "2026-09-09T19:00:41Z",
   "note": "slug maps to clips/<slug>.mp4 by convention; the wiring script reads this file",
   "clips": {
     "discovery-capture-in-opine": "clips/discovery-capture-in-opine.mp4",
@@ -8,6 +8,7 @@
     "faq-connect-crm": "clips/faq-connect-crm.mp4",
     "faq-deal-not-showing": "clips/faq-deal-not-showing.mp4",
     "faq-export-data": "clips/faq-export-data.mp4",
+    "faq-how-do-i-create-a-custom-deal-property": "clips/faq-how-do-i-create-a-custom-deal-property.mp4",
     "platform-notifications": "clips/platform-notifications.mp4"
   }
 }
