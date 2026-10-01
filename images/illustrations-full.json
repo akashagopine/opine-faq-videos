@@ -1,0 +1,1402 @@
+{
+  "bySlug": {
+    "faq-what-is-the-difference-between-the-crm-view-and-the-opine-view-on-the-deal-board": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/deals-crm-view-vs-opine-view.png",
+      "alt": "Two deal boards side by side: CRM view with example CRM stages, and Opine view with the stages Scoping, Active Evaluation, Decision Pending and On Hold",
+      "caption": "CRM view mirrors your CRM stages. Opine view groups deals by Opine evaluation stages, and moving a card there leaves the CRM stage alone."
+    },
+    "faq-what-data-sources-does-a-deal-summary-use-and-how-are-conflicts-handled": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/ai-deal-summary-sources.png",
+      "alt": "The sources feeding a deal summary, with the CRM arrow drawn thick because the most recent CRM status sets the deal state",
+      "caption": "Every connected source adds context to the deal summary. The most recent CRM status alone sets the current deal state."
+    },
+    "faq-what-s3-path-do-opine-exports-write-to": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/integrations-data-export-run-folders.png",
+      "alt": "A Data Export job writing one run folder per run under an S3 prefix, and a warehouse loading them with COPY INTO",
+      "caption": "Where each run lands under the prefix your loader reads."
+    },
+    "faq-why-did-my-integration-stop-syncing-and-how-do-i-fix-it": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/granola-authorization-row.jpg",
+      "alt": "The Granola row on the Authorizations page in Settings, with its Connect control",
+      "caption": "Your own Granola authorization sits under Settings, Authorizations. The control on the row connects or reconnects it."
+    },
+    "faq-who-can-generate-api-keys-and-where-do-i-create-or-revoke-them": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/api-keys-permission-row.jpg",
+      "alt": "The Admin section of the Permissions matrix in Settings, with the API keys row showing Manage for the Admin role",
+      "caption": "The API keys row sits in the Admin section of Settings, Permissions. A role with Manage on this row can generate and revoke keys."
+    },
+    "faq-how-does-opine-ai-link-my-calendar-meetings-to-deals-for-meeting-prep": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/features-meeting-matching.png",
+      "alt": "A calendar invite matched to an account, then an opportunity, then a deal in Opine, with three ways the match goes wrong",
+      "caption": "A meeting is matched from the people on the invite to an account and an opportunity. A missing contact role or several open opportunities can send it to the wrong deal."
+    },
+    "faq-api-keys": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-api-keys.png",
+      "alt": "How do I create an API key for the Opine API?",
+      "caption": "The steps, in order."
+    },
+    "faq-can-i-adjust-the-suggested-meeting-flow-and-time-allocations-in-meeting-prep": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-can-i-adjust-the-suggested-meeting-flow-and-time-allocations-in-meeting-prep.png",
+      "alt": "Can I adjust the meeting flow in Meeting Prep?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-can-i-edit-company-fields-in-opine-or-only-in-my-crm": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-can-i-edit-company-fields-in-opine-or-only-in-my-crm.png",
+      "alt": "Can I edit company fields in Opine or only in my CRM?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-can-i-edit-or-delete-a-manual-activity-entry-i-created": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-can-i-edit-or-delete-a-manual-activity-entry-i-created.png",
+      "alt": "Can I edit or delete a manual activity entry I created?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-can-i-hide-the-floating-bar-when-i-share-my-screen": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-can-i-hide-the-floating-bar-when-i-share-my-screen.png",
+      "alt": "Can I hide the floating bar when I share my screen?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-can-i-record-without-linking-to-a-deal": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-can-i-record-without-linking-to-a-deal.png",
+      "alt": "Can I record without linking to a deal?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-can-i-save-and-pin-filter-combinations-in-trends-reports": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-can-i-save-and-pin-filter-combinations-in-trends-reports.png",
+      "alt": "Can I save filter combinations in Trends reports?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-can-i-use-the-opine-desktop-app-on-windows": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-can-i-use-the-opine-desktop-app-on-windows.png",
+      "alt": "Can I use the Opine desktop app on Windows?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-collaborator-visibility": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-collaborator-visibility.png",
+      "alt": "What can external collaborators see in a shared evaluation?",
+      "caption": "In short."
+    },
+    "faq-do-tasks-ever-count-as-in-progress-on-a-project": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-do-tasks-ever-count-as-in-progress-on-a-project.png",
+      "alt": "Do tasks ever count as in progress on a project?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-do-updates-to-a-library-criterion-update-templates-and-plans-and-how-are-references-handle": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-do-updates-to-a-library-criterion-update-templates-and-plans-and-how-are-references-handle.png",
+      "alt": "Do updates to a library criterion update templates?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-does-criteria-metrics-filter-by-pipeline-or-deal-type": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-does-criteria-metrics-filter-by-pipeline-or-deal-type.png",
+      "alt": "Does Criteria Metrics filter by pipeline or deal type?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-does-meeting-prep-require-google-calendar-or-microsoft-outlook-integration": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-does-meeting-prep-require-google-calendar-or-microsoft-outlook-integration.png",
+      "alt": "Does Meeting Prep require Google Calendar or Microsoft Outlook integration?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-does-the-desktop-app-ever-record-without-me-starting-it": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-does-the-desktop-app-ever-record-without-me-starting-it.png",
+      "alt": "Does the desktop app ever record without me starting it?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-does-the-desktop-app-record-video": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-does-the-desktop-app-record-video.png",
+      "alt": "Does the desktop app record video?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-how-can-i-customize-buyer-intel-and-vendor-intel-outputs": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-can-i-customize-buyer-intel-and-vendor-intel-outputs.png",
+      "alt": "How can I customize Buyer Intel and Vendor Intel outputs?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-ai-smart-fields-work-for-crm-contact-fields-including-auto-apply-and-field-fill-fre": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-ai-smart-fields-work-for-crm-contact-fields-including-auto-apply-and-field-fill-fre.png",
+      "alt": "How do AI Smart Fields work for CRM Contact fields?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-ai-suggested-tasks-work-and-how-do-i-accept-or-dismiss-them": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-ai-suggested-tasks-work-and-how-do-i-accept-or-dismiss-them.png",
+      "alt": "How do AI suggested tasks work?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-access-a-deal-s-plan-from-the-deal-page": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-access-a-deal-s-plan-from-the-deal-page.png",
+      "alt": "How do I access a deal\u2019s Plan from the deal page?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-access-calendar-event-labeling-settings": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-access-calendar-event-labeling-settings.png",
+      "alt": "How do I access Calendar Event Labeling settings?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-access-meeting-prep-for-a-deal": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-access-meeting-prep-for-a-deal.png",
+      "alt": "How do I access Meeting Prep for a deal?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-access-the-deal-activity-report": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-access-the-deal-activity-report.png",
+      "alt": "How do I access the Deal Activity report?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-access-the-sales-funnel-report": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-access-the-sales-funnel-report.png",
+      "alt": "How do I access the Sales Funnel report?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-access-the-technical-process-report": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-access-the-technical-process-report.png",
+      "alt": "How do I access the Technical Process report?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-add-a-discovered-buyer-participant-to-my-crm-from-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-add-a-discovered-buyer-participant-to-my-crm-from-opine.png",
+      "alt": "How do I add a discovered buyer participant to my CRM from Opine?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-add-a-new-account-to-opine-from-salesforce-or-hubspot": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-add-a-new-account-to-opine-from-salesforce-or-hubspot.png",
+      "alt": "How do I add a new account to Opine from Salesforce or HubSpot?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-add-files-to-a-deal-s-file-center": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-add-files-to-a-deal-s-file-center.png",
+      "alt": "How do I add files to a deal\u2019s File Center?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-add-or-remove-labels-on-a-knowledgebase-item-via-api": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-add-or-remove-labels-on-a-knowledgebase-item-via-api.png",
+      "alt": "How do I add or remove labels on a Knowledgebase item via API?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-add-the-opine-deal-embed-to-opportunity-record-pages": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-add-the-opine-deal-embed-to-opportunity-record-pages.png",
+      "alt": "How do I add the Opine Deal Embed to Opportunity record pages?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-announce-the-recording-in-zoom-chat": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-announce-the-recording-in-zoom-chat.png",
+      "alt": "How do I announce the recording in Zoom chat?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-archive-or-delete-a-project-and-what-changes-after": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-archive-or-delete-a-project-and-what-changes-after.png",
+      "alt": "How do I archive or delete a project?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-assign-success-criteria-or-tasks-to-a-buyer-before-they-sign-in": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-assign-success-criteria-or-tasks-to-a-buyer-before-they-sign-in.png",
+      "alt": "How do I assign success criteria or tasks to a buyer before they sign in?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-attach-a-note-to-a-meeting-event": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-attach-a-note-to-a-meeting-event.png",
+      "alt": "How do I attach a note to a meeting event?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-authenticate-to-the-opine-api-and-what-is-the-base-url": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-authenticate-to-the-opine-api-and-what-is-the-base-url.png",
+      "alt": "How do I authenticate to the Opine API?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-change-between-board-view-and-table-view-on-deals": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-change-between-board-view-and-table-view-on-deals.png",
+      "alt": "How do I change between board view and table view on Deals?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-change-my-organization-name-in-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-change-my-organization-name-in-opine.png",
+      "alt": "How do I change my organization name in Opine?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-choose-a-different-crm-pipeline-in-deals": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-choose-a-different-crm-pipeline-in-deals.png",
+      "alt": "How do I choose a different CRM pipeline in Deals?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-choose-a-different-crm-pipeline-or-sales-process-on-the-workbench": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-choose-a-different-crm-pipeline-or-sales-process-on-the-workbench.png",
+      "alt": "How do I choose a different CRM pipeline or sales process on the Workbench?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-compare-team-groups-in-team-analytics": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-compare-team-groups-in-team-analytics.png",
+      "alt": "How do I compare team groups in Team Analytics?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-connect-a-slack-or-microsoft-teams-channel-to-a-deal": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-connect-a-slack-or-microsoft-teams-channel-to-a-deal.png",
+      "alt": "How do I connect a Slack or Microsoft Teams channel to a deal?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-control-which-files-and-requests-buyers-see-in-the-buyer-portal": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-control-which-files-and-requests-buyers-see-in-the-buyer-portal.png",
+      "alt": "How do I control which files and requests buyers see in the Buyer Portal?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-create-a-calendar-event-label-in-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-create-a-calendar-event-label-in-opine.png",
+      "alt": "How do I create a Calendar Event Label in Opine?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-create-a-knowledgebase-item-via-api": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-create-a-knowledgebase-item-via-api.png",
+      "alt": "How do I create a Knowledgebase item via API?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-create-a-new-document-and-link-it-to-a-deal": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-create-a-new-document-and-link-it-to-a-deal.png",
+      "alt": "How do I create a document linked to a deal?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-create-a-new-label-for-calendar-events": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-create-a-new-label-for-calendar-events.png",
+      "alt": "How do I create a new label for calendar events?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-create-a-note-on-a-deal": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-create-a-note-on-a-deal.png",
+      "alt": "How do I create a note on a deal?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-create-a-plan-for-a-deal": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-create-a-plan-for-a-deal.png",
+      "alt": "How do I create a Plan for a deal?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-create-a-project-and-handle-required-fields": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-create-a-project-and-handle-required-fields.png",
+      "alt": "How do I create a project?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-create-a-task-from-the-deal-tasks-tab": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-create-a-task-from-the-deal-tasks-tab.png",
+      "alt": "How do I create a task from the deal Tasks tab?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-create-and-share-a-saved-view": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-create-and-share-a-saved-view.png",
+      "alt": "How do I create a saved view?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-create-and-track-subtasks-and-promote-one-to-a-task": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-create-and-track-subtasks-and-promote-one-to-a-task.png",
+      "alt": "How do I create and track subtasks?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-create-the-opine-custom-mcp-connector-in-gemini-enterprise": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-create-the-opine-custom-mcp-connector-in-gemini-enterprise.png",
+      "alt": "How do I create the Opine custom MCP connector in Gemini Enterprise?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-customize-the-buyer-portal-title-welcome-message-color-and-timeline": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-customize-the-buyer-portal-title-welcome-message-color-and-timeline.png",
+      "alt": "How do I customize the Buyer Portal title, welcome message, color, and timeline?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-delete-a-note": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-delete-a-note.png",
+      "alt": "How do I delete a note?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-enable-ai-next-steps-updates-and-post-them-to-the-opportunity-chatter-feed": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-enable-ai-next-steps-updates-and-post-them-to-the-opportunity-chatter-feed.png",
+      "alt": "How do I enable AI next steps updates?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-enable-and-share-the-buyer-portal-for-a-plan": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-enable-and-share-the-buyer-portal-for-a-plan.png",
+      "alt": "How do I share the Buyer Portal for a Plan?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-enable-opine-actions-for-my-gemini-app": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-enable-opine-actions-for-my-gemini-app.png",
+      "alt": "How do I enable Opine actions for my Gemini app?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-export-a-document-and-what-formats-are-supported": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-export-a-document-and-what-formats-are-supported.png",
+      "alt": "How do I export a document?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-filter-deals-and-save-a-view-on-the-deals-dashboard": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-filter-deals-and-save-a-view-on-the-deals-dashboard.png",
+      "alt": "How do I save a filtered view on the Deals dashboard?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-filter-deals-by-close-date-in-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-filter-deals-by-close-date-in-opine.png",
+      "alt": "How do I filter deals by Close Date in Opine?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-filter-the-activity-timeline-to-hide-crm-field-churn": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-filter-the-activity-timeline-to-hide-crm-field-churn.png",
+      "alt": "How do I filter the Activity timeline to hide CRM field churn?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-find-under-engaged-deals-in-deal-activity": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-find-under-engaged-deals-in-deal-activity.png",
+      "alt": "How do I find under-engaged deals in Deal Activity?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-generate-a-document-from-a-template-in-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-generate-a-document-from-a-template-in-opine.png",
+      "alt": "How do I generate a document from a template in Opine?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-install-the-opine-desktop-app-on-macos": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-install-the-opine-desktop-app-on-macos.png",
+      "alt": "How do I install the Opine desktop app on macOS?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-interpret-a-sharp-drop-between-stages-in-the-funnel-chart": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-interpret-a-sharp-drop-between-stages-in-the-funnel-chart.png",
+      "alt": "How do I interpret a sharp drop between stages in the funnel chart?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-let-opine-read-email-content-from-salesforce-activities-for-deal-analysis": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-let-opine-read-email-content-from-salesforce-activities-for-deal-analysis.png",
+      "alt": "How do I let Opine read email content from Salesforce activities?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-link-a-meeting-to-a-project": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-link-a-meeting-to-a-project.png",
+      "alt": "How do I link a meeting to a project?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-link-a-task-to-a-project": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-link-a-task-to-a-project.png",
+      "alt": "How do I link a task to a project?",
+      "caption": "In short."
+    },
+    "faq-how-do-i-log-manual-activity-on-a-deal": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-log-manual-activity-on-a-deal.png",
+      "alt": "How do I log manual activity on a deal?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-log-time-manually-to-a-project": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-log-time-manually-to-a-project.png",
+      "alt": "How do I log time manually to a project?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-navigate-from-a-deal-to-its-account-in-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-navigate-from-a-deal-to-its-account-in-opine.png",
+      "alt": "How do I navigate from a deal to its account in Opine?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-open-and-use-filters-on-the-deals-dashboard": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-open-and-use-filters-on-the-deals-dashboard.png",
+      "alt": "How do I use filters on the Deals dashboard?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-open-and-use-the-meeting-prep-panel-for-a-calendar-event": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-open-and-use-the-meeting-prep-panel-for-a-calendar-event.png",
+      "alt": "How do I open the Meeting Prep panel for a calendar event?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-open-ask-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-open-ask-opine.png",
+      "alt": "How do I open Ask Opine?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-open-the-buyer-portal-for-a-plan": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-open-the-buyer-portal-for-a-plan.png",
+      "alt": "How do I open the Buyer Portal for a Plan?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-organize-and-rename-files-in-the-file-center": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-organize-and-rename-files-in-the-file-center.png",
+      "alt": "How do I organize files in the File Center?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-pin-a-saved-view-as-my-default-for-a-page": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-pin-a-saved-view-as-my-default-for-a-page.png",
+      "alt": "How do I pin a saved view as my default for a page?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-pin-important-files-in-the-buyer-portal-header": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-pin-important-files-in-the-buyer-portal-header.png",
+      "alt": "How do I pin important files in the Buyer Portal header?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-query-past-states-using-deal-history-and-what-date-parameters-are-required": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-query-past-states-using-deal-history-and-what-date-parameters-are-required.png",
+      "alt": "How do I query past states using deal_history?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-rate-success-criteria-in-a-plan": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-rate-success-criteria-in-a-plan.png",
+      "alt": "How do I rate success criteria in a Plan?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-see-the-full-breakdown-under-how-this-is-counted": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-see-the-full-breakdown-under-how-this-is-counted.png",
+      "alt": "How do I see the full breakdown under How this is counted?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-see-which-team-member-has-the-highest-meeting-load": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-see-which-team-member-has-the-highest-meeting-load.png",
+      "alt": "How do I see which team member has the highest meeting load?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-share-a-filtered-view-using-a-link": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-share-a-filtered-view-using-a-link.png",
+      "alt": "How do I share a filtered view using a link?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-how-do-i-share-a-link-to-a-filtered-deal-board-or-a-specific-deal-tab": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-share-a-link-to-a-filtered-deal-board-or-a-specific-deal-tab.png",
+      "alt": "How do I share a link to a filtered deal board or a specific deal tab?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-share-or-pin-files-to-the-buyer-portal-file-center": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-share-or-pin-files-to-the-buyer-portal-file-center.png",
+      "alt": "How do I share files to the Buyer Portal File Center?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-share-the-buyer-portal-with-my-customer": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-share-the-buyer-portal-with-my-customer.png",
+      "alt": "How do I share the Buyer Portal with my customer?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-show-archived-projects-in-the-projects-list": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-show-archived-projects-in-the-projects-list.png",
+      "alt": "How do I show archived projects in the Projects list?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-show-only-deal-meetings-or-cancelled-events-in-the-workbench-calendar": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-show-only-deal-meetings-or-cancelled-events-in-the-workbench-calendar.png",
+      "alt": "How do I show only deal meetings or cancelled events in the Workbench calendar?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-start-or-continue-an-opine-ai-chat-from-the-command-palette": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-start-or-continue-an-opine-ai-chat-from-the-command-palette.png",
+      "alt": "How do I start or continue an Opine AI chat from the command palette?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-start-recording-a-meeting-in-the-desktop-app": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-start-recording-a-meeting-in-the-desktop-app.png",
+      "alt": "How do I start recording a meeting in the desktop app?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-stop-a-label-from-applying-to-future-events-without-removing-past-labels": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-stop-a-label-from-applying-to-future-events-without-removing-past-labels.png",
+      "alt": "How do I stop a label from applying to future events without removing past labels?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-switch-organizations-in-the-desktop-app": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-switch-organizations-in-the-desktop-app.png",
+      "alt": "How do I switch organizations in the desktop app?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-unlink-work-from-a-project-and-what-happens-to-the-item": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-unlink-work-from-a-project-and-what-happens-to-the-item.png",
+      "alt": "How do I unlink work from a project?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-upload-a-logo-and-set-the-branding-color-for-the-buyer-portal": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-upload-a-logo-and-set-the-branding-color-for-the-buyer-portal.png",
+      "alt": "How do I brand the Buyer Portal?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-upload-or-change-my-organization-logo": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-upload-or-change-my-organization-logo.png",
+      "alt": "How do I upload or change my organization logo?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-use-inline-ai-editing-to-revise-part-of-a-generated-document": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-use-inline-ai-editing-to-revise-part-of-a-generated-document.png",
+      "alt": "How do I use inline AI editing to revise part of a generated document?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-use-nextcursor-and-previouscursor-with-opine-api-pagination": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-use-nextcursor-and-previouscursor-with-opine-api-pagination.png",
+      "alt": "How do I use nextCursor and previousCursor with Opine API pagination?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-view-and-manage-my-ask-opine-conversation-history": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-view-and-manage-my-ask-opine-conversation-history.png",
+      "alt": "How do I view my Ask Opine conversation history?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-meetings-count-hours-vs-person-hours-in-a-project": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-meetings-count-hours-vs-person-hours-in-a-project.png",
+      "alt": "How do meetings count hours vs person-hours in a project?",
+      "caption": "In short."
+    },
+    "faq-how-do-product-requests-team-requests-and-tasks-map-to-progress-buckets": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-product-requests-team-requests-and-tasks-map-to-progress-buckets.png",
+      "alt": "How do product requests, team requests, and tasks map to progress buckets?",
+      "caption": "In short."
+    },
+    "faq-how-do-project-tables-handle-archived-projects-and-project-activity-history-ranges": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-project-tables-handle-archived-projects-and-project-activity-history-ranges.png",
+      "alt": "How do project tables handle archived projects?",
+      "caption": "Who can, and under what condition."
+    },
+    "faq-how-do-prompt-placeholders-work-in-document-templates": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-prompt-placeholders-work-in-document-templates.png",
+      "alt": "How do prompt placeholders work in document templates?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-team-request-statuses-map-to-project-progress": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-team-request-statuses-map-to-project-progress.png",
+      "alt": "How do team request statuses map to project progress?",
+      "caption": "In short."
+    },
+    "faq-how-do-updates-for-the-opine-desktop-app-install": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-updates-for-the-opine-desktop-app-install.png",
+      "alt": "How do updates for the Opine desktop app install?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-does-crm-sync-work-for-accounts-and-how-often-do-updates-appear": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-does-crm-sync-work-for-accounts-and-how-often-do-updates-appear.png",
+      "alt": "How does CRM sync work for accounts?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-does-keyword-matching-for-calendar-event-labeling-work": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-does-keyword-matching-for-calendar-event-labeling-work.png",
+      "alt": "How does keyword matching for Calendar Event Labeling work?",
+      "caption": "In short."
+    },
+    "faq-how-does-opine-count-recorded-calls-without-double-counting-meetings": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-does-opine-count-recorded-calls-without-double-counting-meetings.png",
+      "alt": "How does Opine count recorded calls without double counting meetings?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-does-opine-discover-and-classify-buyer-and-vendor-participants": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-does-opine-discover-and-classify-buyer-and-vendor-participants.png",
+      "alt": "How does Opine discover buyer and vendor participants?",
+      "caption": "In short."
+    },
+    "faq-how-does-opine-notify-my-team-about-important-updates": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-does-opine-notify-my-team-about-important-updates.png",
+      "alt": "How does Opine notify my team about important updates?",
+      "caption": "In short."
+    },
+    "faq-how-does-pagination-work-with-nextcursor-and-previouscursor": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-does-pagination-work-with-nextcursor-and-previouscursor.png",
+      "alt": "How does pagination work with nextCursor and previousCursor?",
+      "caption": "In short."
+    },
+    "faq-how-does-the-api-return-validation-errors": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-does-the-api-return-validation-errors.png",
+      "alt": "How does the API return validation errors?",
+      "caption": "In short."
+    },
+    "faq-how-does-the-pipeline-selector-affect-filters-and-saved-views-on-deals-and-reports": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-does-the-pipeline-selector-affect-filters-and-saved-views-on-deals-and-reports.png",
+      "alt": "How does the pipeline selector affect filters and saved views on Deals and reports?",
+      "caption": "In short."
+    },
+    "faq-how-is-project-progress-displayed-in-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-is-project-progress-displayed-in-opine.png",
+      "alt": "How is project progress displayed in Opine?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-is-the-desktop-app-different-from-the-meeting-bot": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-is-the-desktop-app-different-from-the-meeting-bot.png",
+      "alt": "How is the desktop app different from the meeting bot?",
+      "caption": "In short."
+    },
+    "faq-if-i-attach-a-note-to-a-meeting-does-it-show-up-on-the-deal-too": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-if-i-attach-a-note-to-a-meeting-does-it-show-up-on-the-deal-too.png",
+      "alt": "If I attach a note to a meeting, does it show up on the deal too?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-if-i-edit-or-delete-a-label-what-changes-happen-to-past-and-future-events": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-if-i-edit-or-delete-a-label-what-changes-happen-to-past-and-future-events.png",
+      "alt": "What happens to past and future events when I edit a label?",
+      "caption": "In short."
+    },
+    "faq-structure-tasks-during-evaluation": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-structure-tasks-during-evaluation.png",
+      "alt": "How should I structure tasks during an evaluation?",
+      "caption": "In short."
+    },
+    "faq-the-picker-says-projects-could-not-be-loaded-what-should-i-do": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-the-picker-says-projects-could-not-be-loaded-what-should-i-do.png",
+      "alt": "The picker says \"Projects could not be loaded\". What should I do?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-what-can-i-search-with-the-command-palette-and-are-archived-projects-returned": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-can-i-search-with-the-command-palette-and-are-archived-projects-returned.png",
+      "alt": "What can I search with the command palette?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-deal-data-does-opine-ai-use-to-generate-document-content": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-deal-data-does-opine-ai-use-to-generate-document-content.png",
+      "alt": "What deal data does Opine AI use to generate document content?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-do-required-for-evaluation-include-in-update-and-update-request-count-toggles-do": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-do-required-for-evaluation-include-in-update-and-update-request-count-toggles-do.png",
+      "alt": "What do Required for Evaluation, Include in Update, and Update Request Count toggles do?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-does-average-closed-won-technical-stage-length-mean": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-average-closed-won-technical-stage-length-mean.png",
+      "alt": "What does Average Closed-Won Technical Stage Length mean?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-does-buyer-intel-show-for-a-participant": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-buyer-intel-show-for-a-participant.png",
+      "alt": "What does Buyer Intel show for a participant?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-does-choosing-opine-users-as-the-options-source-do-and-can-i-change-it-later": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-choosing-opine-users-as-the-options-source-do-and-can-i-change-it-later.png",
+      "alt": "What does choosing Opine users as the Options source do?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-does-enhance-notes-do": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-enhance-notes-do.png",
+      "alt": "What does Enhance notes do?",
+      "caption": "In short."
+    },
+    "faq-what-does-join-record-do-in-meeting-reminders": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-join-record-do-in-meeting-reminders.png",
+      "alt": "What does Join & record do in meeting reminders?",
+      "caption": "The routes you can take."
+    },
+    "faq-what-does-save-transcripts-to-my-computer-do": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-save-transcripts-to-my-computer-do.png",
+      "alt": "What does Save transcripts to my computer do?",
+      "caption": "In short."
+    },
+    "faq-what-does-share-product-usage-in-settings-control": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-share-product-usage-in-settings-control.png",
+      "alt": "What does Share product usage in Settings control?",
+      "caption": "The routes you can take."
+    },
+    "faq-what-does-the-average-number-of-criteria-per-plan-chart-track": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-the-average-number-of-criteria-per-plan-chart-track.png",
+      "alt": "What does the Average Number of Criteria per Plan chart track?",
+      "caption": "In short."
+    },
+    "faq-what-does-the-closed-deals-only-toggle-do-in-sales-funnel": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-the-closed-deals-only-toggle-do-in-sales-funnel.png",
+      "alt": "What does the Closed deals only toggle do in Sales Funnel?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-does-the-criteria-metrics-report-show": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-the-criteria-metrics-report-show.png",
+      "alt": "What does the Criteria Metrics report show?",
+      "caption": "The routes you can take."
+    },
+    "faq-what-does-the-desktop-app-capture-from-a-meeting": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-the-desktop-app-capture-from-a-meeting.png",
+      "alt": "What does the desktop app capture from a meeting?",
+      "caption": "In short."
+    },
+    "faq-what-does-the-meeting-prep-guide-include": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-the-meeting-prep-guide-include.png",
+      "alt": "What does the Meeting Prep guide include?",
+      "caption": "In short."
+    },
+    "faq-what-does-the-salesforce-embed-panel-show-on-an-opportunity": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-the-salesforce-embed-panel-show-on-an-opportunity.png",
+      "alt": "What does the Salesforce embed panel show on an Opportunity?",
+      "caption": "The routes you can take."
+    },
+    "faq-what-does-the-team-analytics-report-show": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-the-team-analytics-report-show.png",
+      "alt": "What does the Team Analytics report show?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-does-the-technical-stage-drop-off-chart-show": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-the-technical-stage-drop-off-chart-show.png",
+      "alt": "What does the Technical Stage Drop Off chart show?",
+      "caption": "In short."
+    },
+    "faq-what-does-vendor-intel-show-for-internal-teammates": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-does-vendor-intel-show-for-internal-teammates.png",
+      "alt": "What does Vendor Intel show for internal teammates?",
+      "caption": "In short."
+    },
+    "faq-what-event-type-scope-options-can-i-choose-and-what-do-they-apply-to": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-event-type-scope-options-can-i-choose-and-what-do-they-apply-to.png",
+      "alt": "What Event Type Scope options can I choose?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-events-do-buyers-see-on-the-buyer-portal-activity-tab": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-events-do-buyers-see-on-the-buyer-portal-activity-tab.png",
+      "alt": "What events do buyers see on the Buyer Portal Activity tab?",
+      "caption": "In short."
+    },
+    "faq-what-filters-are-available-in-the-team-analytics-report": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-filters-are-available-in-the-team-analytics-report.png",
+      "alt": "What filters are available in the Team Analytics report?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-filters-can-i-use-in-criteria-metrics": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-filters-can-i-use-in-criteria-metrics.png",
+      "alt": "What filters can I use in Criteria Metrics?",
+      "caption": "The routes you can take."
+    },
+    "faq-what-filters-can-i-use-in-the-sales-funnel-report": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-filters-can-i-use-in-the-sales-funnel-report.png",
+      "alt": "What filters can I use in the Sales Funnel report?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-filters-can-i-use-in-the-technical-process-report": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-filters-can-i-use-in-the-technical-process-report.png",
+      "alt": "What filters can I use in the Technical Process report?",
+      "caption": "In short."
+    },
+    "faq-what-filters-do-trends-reports-support": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-filters-do-trends-reports-support.png",
+      "alt": "What filters do Trends reports support?",
+      "caption": "In short."
+    },
+    "faq-what-happens-after-i-stop-a-desktop-recording": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-happens-after-i-stop-a-desktop-recording.png",
+      "alt": "What happens after I stop a desktop recording?",
+      "caption": "The routes you can take."
+    },
+    "faq-what-happens-if-i-switch-buyer-portal-access-from-anyone-with-link-to-restricted": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-happens-if-i-switch-buyer-portal-access-from-anyone-with-link-to-restricted.png",
+      "alt": "What happens if I switch Buyer Portal access from Anyone with Link to Restricted?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-happens-to-the-live-transcript-after-the-call": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-happens-to-the-live-transcript-after-the-call.png",
+      "alt": "What happens to the live transcript after the call?",
+      "caption": "In short."
+    },
+    "faq-what-information-is-on-the-account-detail-page": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-information-is-on-the-account-detail-page.png",
+      "alt": "What information is on the Account Detail page?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-is-a-project-in-opine-and-how-does-it-relate-to-deals-and-accounts": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-is-a-project-in-opine-and-how-does-it-relate-to-deals-and-accounts.png",
+      "alt": "What is a Project in Opine?",
+      "caption": "In short."
+    },
+    "faq-what-is-in-the-criteria-rankings-table-and-how-do-i-use-it": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-is-in-the-criteria-rankings-table-and-how-do-i-use-it.png",
+      "alt": "What is in the Criteria rankings table?",
+      "caption": "In short."
+    },
+    "faq-what-is-the-difference-between-restricted-and-anyone-with-link-on-the-buyer-port": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-is-the-difference-between-restricted-and-anyone-with-link-on-the-buyer-port.png",
+      "alt": "What is the difference between Restricted and Anyone with Link on the Buyer Portal?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-is-the-fastest-way-to-find-a-deal-plan-or-account-in-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-is-the-fastest-way-to-find-a-deal-plan-or-account-in-opine.png",
+      "alt": "What is the fastest way to find a deal, plan, or account in Opine?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-is-the-workbench-and-what-does-it-show-me": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-is-the-workbench-and-what-does-it-show-me.png",
+      "alt": "What is the Workbench?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-items-count-toward-project-progress-and-which-do-not": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-items-count-toward-project-progress-and-which-do-not.png",
+      "alt": "What items count toward project progress?",
+      "caption": "In short."
+    },
+    "faq-what-keyboard-shortcuts-can-i-use-for-search-and-navigation": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-keyboard-shortcuts-can-i-use-for-search-and-navigation.png",
+      "alt": "What keyboard shortcuts can I use for search and navigation?",
+      "caption": "The steps, in order."
+    },
+    "faq-what-oauth-settings-do-i-use-to-connect-opine-mcp-in-gemini-enterprise": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-oauth-settings-do-i-use-to-connect-opine-mcp-in-gemini-enterprise.png",
+      "alt": "What OAuth settings do I use to connect Opine MCP in Gemini Enterprise?",
+      "caption": "Who can, and under what condition."
+    },
+    "faq-what-task-statuses-exist-and-how-do-i-change-them": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-task-statuses-exist-and-how-do-i-change-them.png",
+      "alt": "What task statuses exist?",
+      "caption": "The steps, in order."
+    },
+    "faq-when-should-i-review-a-meeting-prep-guide-before-a-call": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-when-should-i-review-a-meeting-prep-guide-before-a-call.png",
+      "alt": "When should I review a Meeting Prep guide before a call?",
+      "caption": "In short."
+    },
+    "faq-where-do-desktop-app-recordings-appear-in-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-where-do-desktop-app-recordings-appear-in-opine.png",
+      "alt": "Where do desktop app recordings appear in Opine?",
+      "caption": "In short."
+    },
+    "faq-where-do-i-access-the-file-center-for-a-deal": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-where-do-i-access-the-file-center-for-a-deal.png",
+      "alt": "Where do I access the File Center for a deal?",
+      "caption": "The routes you can take."
+    },
+    "faq-where-do-i-access-the-trends-dashboard-in-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-where-do-i-access-the-trends-dashboard-in-opine.png",
+      "alt": "Where do I access the Trends dashboard in Opine?",
+      "caption": "The steps, in order."
+    },
+    "faq-where-do-i-find-and-manage-my-tasks-in-workbench": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-where-do-i-find-and-manage-my-tasks-in-workbench.png",
+      "alt": "Where do I find my tasks in Workbench?",
+      "caption": "The steps, in order."
+    },
+    "faq-where-do-i-find-buyer-intel-vendor-intel-and-ai-smart-fields-in-a-deal": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-where-do-i-find-buyer-intel-vendor-intel-and-ai-smart-fields-in-a-deal.png",
+      "alt": "Where do I find Buyer Intel, Vendor Intel, and AI Smart Fields in a deal?",
+      "caption": "The steps, in order."
+    },
+    "faq-where-do-i-find-the-ai-deal-summary-and-how-current-is-it": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-where-do-i-find-the-ai-deal-summary-and-how-current-is-it.png",
+      "alt": "Where do I find the AI deal summary?",
+      "caption": "The steps, in order."
+    },
+    "faq-where-do-i-see-the-activity-log-for-a-deal": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-where-do-i-see-the-activity-log-for-a-deal.png",
+      "alt": "Where do I see the Activity Log for a deal?",
+      "caption": "The steps, in order."
+    },
+    "faq-where-do-the-deals-in-opine-come-from-and-can-i-create-one-by-hand": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-where-do-the-deals-in-opine-come-from-and-can-i-create-one-by-hand.png",
+      "alt": "Where do deals in Opine come from?",
+      "caption": "In short."
+    },
+    "faq-which-api-endpoint-lists-available-opine-sql-functions": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-which-api-endpoint-lists-available-opine-sql-functions.png",
+      "alt": "Which API endpoint lists available Opine SQL functions?",
+      "caption": "The routes you can take."
+    },
+    "faq-which-api-endpoint-runs-an-opine-sql-query": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-which-api-endpoint-runs-an-opine-sql-query.png",
+      "alt": "Which API endpoint runs an Opine SQL query?",
+      "caption": "In short."
+    },
+    "faq-which-api-lists-all-opine-sql-tables": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-which-api-lists-all-opine-sql-tables.png",
+      "alt": "Which API lists all Opine SQL tables?",
+      "caption": "The steps, in order."
+    },
+    "faq-which-api-returns-details-for-a-specific-table-in-opine-sql": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-which-api-returns-details-for-a-specific-table-in-opine-sql.png",
+      "alt": "Which API returns details for a specific table in Opine SQL?",
+      "caption": "The steps, in order."
+    },
+    "faq-which-items-can-i-link-to-a-project-and-which-ones-affect-progress": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-which-items-can-i-link-to-a-project-and-which-ones-affect-progress.png",
+      "alt": "Which items can I link to a project?",
+      "caption": "The steps, in order."
+    },
+    "faq-which-opine-pages-support-filters-and-saved-views": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-which-opine-pages-support-filters-and-saved-views.png",
+      "alt": "Which Opine pages support filters and saved views?",
+      "caption": "The short answer and its scope."
+    },
+    "faq-which-outlook-events-does-opine-import-into-opine-and-are-private-events-excluded": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-which-outlook-events-does-opine-import-into-opine-and-are-private-events-excluded.png",
+      "alt": "Which Outlook events does Opine import?",
+      "caption": "The steps, in order."
+    },
+    "faq-which-reports-are-always-available-in-the-trends-dashboard": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-which-reports-are-always-available-in-the-trends-dashboard.png",
+      "alt": "Which reports are always available in the Trends dashboard?",
+      "caption": "In short."
+    },
+    "faq-which-sources-add-hours-to-a-project": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-which-sources-add-hours-to-a-project.png",
+      "alt": "Which sources add hours to a project?",
+      "caption": "The steps, in order."
+    },
+    "faq-who-can-edit-organization-settings-and-where-do-i-find-them": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-who-can-edit-organization-settings-and-where-do-i-find-them.png",
+      "alt": "Who can edit Organization Settings?",
+      "caption": "Who can, and under what condition."
+    },
+    "faq-who-can-view-or-edit-projects-and-do-buyers-have-access": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-who-can-view-or-edit-projects-and-do-buyers-have-access.png",
+      "alt": "Who can view or edit projects?",
+      "caption": "Who can, and under what condition."
+    },
+    "faq-why-are-scheduled-meetings-not-included-in-the-project-hours-column": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-are-scheduled-meetings-not-included-in-the-project-hours-column.png",
+      "alt": "Why are scheduled meetings not included in the project Hours column?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-why-did-i-not-get-a-meeting-reminder-from-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-did-i-not-get-a-meeting-reminder-from-opine.png",
+      "alt": "Why did I not get a meeting reminder from Opine?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-why-do-i-get-a-400-error-when-i-include-nextcursor-and-previouscursor-together": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-do-i-get-a-400-error-when-i-include-nextcursor-and-previouscursor-together.png",
+      "alt": "Why do I get a 400 error when I include nextCursor and previousCursor together?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-why-do-i-not-see-trends-or-team-requests-in-the-sidebar": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-do-i-not-see-trends-or-team-requests-in-the-sidebar.png",
+      "alt": "Why do I not see Trends or Team Requests in the sidebar?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-why-do-i-see-ai-field-fill-and-field-fill-frequency-in-settings": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-do-i-see-ai-field-fill-and-field-fill-frequency-in-settings.png",
+      "alt": "Why do I see AI Field Fill and Field Fill Frequency in settings?",
+      "caption": "In short."
+    },
+    "faq-why-do-i-see-the-opine-embed-isn-t-enabled-in-the-panel": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-do-i-see-the-opine-embed-isn-t-enabled-in-the-panel.png",
+      "alt": "Why do I see \"The Opine embed isn't enabled\" in the panel?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-why-do-some-criteria-appear-in-the-rankings-with-no-scores": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-do-some-criteria-appear-in-the-rankings-with-no-scores.png",
+      "alt": "Why do some criteria appear in the rankings with no scores?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-why-does-a-recorded-call-not-duplicate-the-calendar-event-in-the-timeline": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-does-a-recorded-call-not-duplicate-the-calendar-event-in-the-timeline.png",
+      "alt": "Why does a recorded call not duplicate the calendar event in the timeline?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-why-does-ask-opine-not-include-deal-call-transcripts-when-scoped-to-a-project": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-does-ask-opine-not-include-deal-call-transcripts-when-scoped-to-a-project.png",
+      "alt": "Why does Ask Opine not include deal call transcripts when scoped to a project?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-why-does-linking-not-move-my-task-off-its-deal": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-does-linking-not-move-my-task-off-its-deal.png",
+      "alt": "Why does linking not move my task off its deal?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-why-does-opine-show-project-progress-as-a-fraction-and-not-a-percentage": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-does-opine-show-project-progress-as-a-fraction-and-not-a-percentage.png",
+      "alt": "Why does Opine show project progress as a fraction and not a percentage?",
+      "caption": "In short."
+    },
+    "faq-why-does-the-app-need-screen-recording-permission-on-macos": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-does-the-app-need-screen-recording-permission-on-macos.png",
+      "alt": "Why does the app need Screen recording permission on macOS?",
+      "caption": "In short."
+    },
+    "faq-why-does-the-deal-activity-report-not-appear-in-trends": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-does-the-deal-activity-report-not-appear-in-trends.png",
+      "alt": "Why does the Deal Activity report not appear in Trends?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-why-does-the-team-analytics-report-not-appear-in-trends": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-does-the-team-analytics-report-not-appear-in-trends.png",
+      "alt": "Why does the Team Analytics report not appear in Trends?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-why-is-verify-auth-disabled-during-connector-setup": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-is-verify-auth-disabled-during-connector-setup.png",
+      "alt": "Why is Verify Auth disabled during connector setup?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-why-might-my-project-s-progress-differ-from-a-coworker-s": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-might-my-project-s-progress-differ-from-a-coworker-s.png",
+      "alt": "Why might my project's progress differ from a coworker's?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-how-can-opine-post-next-steps-to-salesforce-opportunities": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-can-opine-post-next-steps-to-salesforce-opportunities.png",
+      "alt": "How can Opine post next steps to Salesforce opportunities?",
+      "caption": "The routes you can take."
+    },
+    "faq-how-do-i-choose-which-slack-workspace-sends-my-direct-messages": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-choose-which-slack-workspace-sends-my-direct-messages.png",
+      "alt": "How do I choose which Slack workspace sends my direct messages?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-connect-another-slack-workspace-to-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-connect-another-slack-workspace-to-opine.png",
+      "alt": "How do I connect another Slack workspace to Opine?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-keep-a-sitemap-import-in-sync-automatically": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-keep-a-sitemap-import-in-sync-automatically.png",
+      "alt": "How do I keep a sitemap import in sync automatically?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-require-approval-before-an-agent-takes-an-action": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-require-approval-before-an-agent-takes-an-action.png",
+      "alt": "How do I require approval before an agent takes an action?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-restrict-where-an-agent-can-post-with-the-slack-messages-toolkit": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-restrict-where-an-agent-can-post-with-the-slack-messages-toolkit.png",
+      "alt": "How do I restrict where an agent can post with the Slack Messages toolkit?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-do-i-stop-slack-direct-messages-from-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-do-i-stop-slack-direct-messages-from-opine.png",
+      "alt": "How do I stop Slack direct messages from Opine?",
+      "caption": "The steps, in order."
+    },
+    "faq-how-often-do-crm-changes-sync-to-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-how-often-do-crm-changes-sync-to-opine.png",
+      "alt": "How often do CRM changes sync to Opine?",
+      "caption": "In short."
+    },
+    "faq-what-are-deals-in-opine": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-are-deals-in-opine.png",
+      "alt": "What are Deals in Opine?",
+      "caption": "In short."
+    },
+    "faq-what-are-toolkits-for-opine-agents": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-are-toolkits-for-opine-agents.png",
+      "alt": "What are toolkits for Opine agents?",
+      "caption": "The routes you can take."
+    },
+    "faq-what-content-types-and-sources-can-a-knowledge-item-have": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-content-types-and-sources-can-a-knowledge-item-have.png",
+      "alt": "What content types and sources can a knowledge item have?",
+      "caption": "In short."
+    },
+    "faq-what-notification-channels-can-i-use": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-what-notification-channels-can-i-use.png",
+      "alt": "What notification channels can I use?",
+      "caption": "The routes you can take."
+    },
+    "faq-which-opportunities-are-imported-after-connecting-salesforce": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-which-opportunities-are-imported-after-connecting-salesforce.png",
+      "alt": "Which opportunities are imported after connecting Salesforce?",
+      "caption": "The routes you can take."
+    },
+    "faq-which-standard-fields-must-have-read-access-for-salesforce-import": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-which-standard-fields-must-have-read-access-for-salesforce-import.png",
+      "alt": "Which standard fields must have read access for Salesforce import?",
+      "caption": "Who can, and under what condition."
+    },
+    "faq-why-can-my-agent-read-but-not-change-anything": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-can-my-agent-read-but-not-change-anything.png",
+      "alt": "Why can my agent read but not change anything?",
+      "caption": "What you see, why it happens, and what to do."
+    },
+    "faq-why-do-i-not-see-add-notion-pages-in-the-menu": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/cards/faq-why-do-i-not-see-add-notion-pages-in-the-menu.png",
+      "alt": "Why do I not see Add Notion Pages in the menu?",
+      "caption": "What you see, why it happens, and what to do."
+    }
+  },
+  "byGroup": {
+    "admin": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-organization.jpg",
+      "alt": "Organization Settings in Opine, with the settings sidebar",
+      "caption": "Organization settings in Opine. The sidebar lists every settings page."
+    },
+    "admin/other": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-organization.jpg",
+      "alt": "Organization Settings in Opine, with the settings sidebar",
+      "caption": "Organization settings in Opine. The sidebar lists every settings page."
+    },
+    "admin/roles-and-permissions": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-permissions.jpg",
+      "alt": "The Permissions page in Settings, a matrix of capabilities by role",
+      "caption": "Permissions under Settings: what each role can do, capability by capability."
+    },
+    "admin/opine-properties": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-properties.jpg",
+      "alt": "The Properties page in Settings, with Deal, Account, Contact and Team Requests tabs",
+      "caption": "Properties under Settings, with a tab per object."
+    },
+    "admin/notification-preferences": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-notifications.jpg",
+      "alt": "Notification Preferences in Settings, with Email, Slack and Teams tabs and a switch per event",
+      "caption": "Notification preferences under Settings, one switch per event and a tab per channel."
+    },
+    "admin/security": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-security.jpg",
+      "alt": "The Security page in Settings: Domain, Hosting and SAML",
+      "caption": "Security under Settings: domain, hosting and SAML."
+    },
+    "admin/audit-log": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-audit-log.jpg",
+      "alt": "The Audit Log in Settings, a table of time, user, activity and resource",
+      "caption": "The Audit Log under Settings."
+    },
+    "admin/profile-and-authorizations": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-authorizations.jpg",
+      "alt": "The Authorizations page in Settings, where a person connects their own accounts",
+      "caption": "Authorizations under Settings: your own connections to installed integrations."
+    },
+    "admin/sales-process": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-sales-process.jpg",
+      "alt": "The Sales Process page in Settings, with Prerequisites, Execution and Outcomes stages",
+      "caption": "Sales Process under Settings, where Opine stages are arranged."
+    },
+    "admin/products": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-products.jpg",
+      "alt": "The Products page in Settings",
+      "caption": "Products under Settings."
+    },
+    "admin/team-management": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-organization.jpg",
+      "alt": "Organization Settings in Opine, with Members and Invitations in the sidebar",
+      "caption": "Members and Invitations sit in the Settings sidebar under Organization."
+    },
+    "requests": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/requests.jpg",
+      "alt": "The Requests page in Opine, with Blocker, Important and Nice to have totals and a table of requests",
+      "caption": "The Requests page in Opine."
+    },
+    "requests/other": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/requests.jpg",
+      "alt": "The Requests page in Opine",
+      "caption": "The Requests page in Opine."
+    },
+    "requests/team-requests": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-team-requests.jpg",
+      "alt": "Team Requests in Settings: request types and the rules library",
+      "caption": "Team Requests under Settings: request types and rules."
+    },
+    "library": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-template-library.jpg",
+      "alt": "The Template Library in Settings: Plans, Playbooks, Use Cases, Success Criteria, Notes and Documents",
+      "caption": "The Template Library under Settings."
+    },
+    "library/other": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-template-library.jpg",
+      "alt": "The Template Library in Settings",
+      "caption": "The Template Library under Settings."
+    },
+    "ai": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-ai-configuration.jpg",
+      "alt": "AI Configuration in Settings, with personal and organization instructions",
+      "caption": "AI configuration under Settings: instructions Opine AI follows for you and for the organization."
+    },
+    "ai/other": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-ai-configuration.jpg",
+      "alt": "AI Configuration in Settings",
+      "caption": "AI configuration under Settings."
+    },
+    "ai/configuration": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-ai-configuration.jpg",
+      "alt": "AI Configuration in Settings",
+      "caption": "AI configuration under Settings."
+    },
+    "ai/agents": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/agents-list.jpg",
+      "alt": "The Agents page in Opine, listing agents with their creator, triggers, access, status and last run",
+      "caption": "The Agents page, with every agent, its triggers and its last run."
+    },
+    "ai/knowledge-base": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/knowledge-base.jpg",
+      "alt": "The Knowledge Base page in Opine, listing document sources with their type, status and last refresh",
+      "caption": "The Knowledge Base, with each source, its type and when it was last refreshed."
+    },
+    "ai/deal-summaries": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-ai-configuration.jpg",
+      "alt": "AI Configuration in Settings, with Deal Summary Instructions",
+      "caption": "Deal summary instructions under AI configuration in Settings."
+    },
+    "reporting": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/insights-sales-funnel.jpg",
+      "alt": "The Sales Funnel report under Insights",
+      "caption": "Insights in Opine, opening on the Sales Funnel report."
+    },
+    "reporting/other": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/insights-sales-funnel.jpg",
+      "alt": "The Sales Funnel report under Insights",
+      "caption": "Insights in Opine, opening on the Sales Funnel report."
+    },
+    "reporting/opine-sql": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/insights-opine-sql.jpg",
+      "alt": "The Opine SQL editor under Insights, with the table list on the left and the query editor on the right",
+      "caption": "The Opine SQL editor under Insights: tables, examples and functions on the left, the query and its results on the right."
+    },
+    "reporting/win-loss": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/insights-win-loss.jpg",
+      "alt": "The Win Loss report under Insights, with conversion rates, cycle lengths and a deal table",
+      "caption": "The Win Loss report under Insights."
+    },
+    "reporting/dashboards": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/insights-dashboards.jpg",
+      "alt": "The Dashboards page under Insights",
+      "caption": "Dashboards under Insights."
+    },
+    "reporting/trends": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/insights-sales-funnel.jpg",
+      "alt": "The Sales Funnel report under Insights",
+      "caption": "A trend report under Insights, with its date range and filters."
+    },
+    "integrations": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording, Chat and Product Management",
+      "caption": "Integrations under Settings, grouped by kind."
+    },
+    "integrations/other": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings",
+      "caption": "Integrations under Settings, grouped by kind."
+    },
+    "integrations/basics": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings",
+      "caption": "Integrations under Settings, grouped by kind."
+    },
+    "integrations/data-export": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-data-export.jpg",
+      "alt": "The Data Export page in Settings, with the export jobs list",
+      "caption": "Data Export under Settings, where export jobs are created and tested."
+    },
+    "integrations/webhooks": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-webhooks.jpg",
+      "alt": "Webhook Registrations in Settings",
+      "caption": "Webhook registrations under Settings."
+    },
+    "integrations/mcp": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-mcp.jpg",
+      "alt": "Custom MCP Servers in Settings, with the register button and the agent activation switch",
+      "caption": "MCP under Settings: registered servers and the agent activation switch."
+    },
+    "integrations/salesforce": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording and Chat",
+      "caption": "Integrations under Settings. Each card opens that integration's own configuration."
+    },
+    "integrations/hubspot": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording and Chat",
+      "caption": "Integrations under Settings. Each card opens that integration's own configuration."
+    },
+    "integrations/google-calendar": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording and Chat",
+      "caption": "Integrations under Settings. Each card opens that integration's own configuration."
+    },
+    "integrations/microsoft-outlook": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording and Chat",
+      "caption": "Integrations under Settings. Each card opens that integration's own configuration."
+    },
+    "integrations/chorus": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording and Chat",
+      "caption": "Integrations under Settings. Each card opens that integration's own configuration."
+    },
+    "integrations/clari": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording and Chat",
+      "caption": "Integrations under Settings. Each card opens that integration's own configuration."
+    },
+    "integrations/fathom": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording and Chat",
+      "caption": "Integrations under Settings. Each card opens that integration's own configuration."
+    },
+    "integrations/gong": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording and Chat",
+      "caption": "Integrations under Settings. Each card opens that integration's own configuration."
+    },
+    "integrations/zoom": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording and Chat",
+      "caption": "Integrations under Settings. Each card opens that integration's own configuration."
+    },
+    "integrations/slack": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording and Chat",
+      "caption": "Integrations under Settings. Each card opens that integration's own configuration."
+    },
+    "integrations/microsoft-teams": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording and Chat",
+      "caption": "Integrations under Settings. Each card opens that integration's own configuration."
+    },
+    "integrations/calendar": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording and Chat",
+      "caption": "Integrations under Settings. Each card opens that integration's own configuration."
+    },
+    "integrations/crm": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording and Chat",
+      "caption": "Integrations under Settings. Each card opens that integration's own configuration."
+    },
+    "integrations/call-recording": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations.jpg",
+      "alt": "The Integrations page in Settings, grouped by CRM, Calendar, Call Recording and Chat",
+      "caption": "Integrations under Settings. Each card opens that integration's own configuration."
+    },
+    "integrations/product-analytics": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations-more.jpg",
+      "alt": "The Integrations page in Settings, scrolled to Product Management, Product Analytics, Document Management and Demo Automation",
+      "caption": "Further down the Integrations page: product management, product analytics, document management and demo automation."
+    },
+    "integrations/posthog": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations-more.jpg",
+      "alt": "The Integrations page in Settings, scrolled to Product Management, Product Analytics, Document Management and Demo Automation",
+      "caption": "Further down the Integrations page: product management, product analytics, document management and demo automation."
+    },
+    "integrations/aha": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations-more.jpg",
+      "alt": "The Integrations page in Settings, scrolled to Product Management, Product Analytics, Document Management and Demo Automation",
+      "caption": "Further down the Integrations page: product management, product analytics, document management and demo automation."
+    },
+    "integrations/jira": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations-more.jpg",
+      "alt": "The Integrations page in Settings, scrolled to Product Management, Product Analytics, Document Management and Demo Automation",
+      "caption": "Further down the Integrations page: product management, product analytics, document management and demo automation."
+    },
+    "integrations/linear": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations-more.jpg",
+      "alt": "The Integrations page in Settings, scrolled to Product Management, Product Analytics, Document Management and Demo Automation",
+      "caption": "Further down the Integrations page: product management, product analytics, document management and demo automation."
+    },
+    "integrations/notion": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations-more.jpg",
+      "alt": "The Integrations page in Settings, scrolled to Product Management, Product Analytics, Document Management and Demo Automation",
+      "caption": "Further down the Integrations page: product management, product analytics, document management and demo automation."
+    },
+    "integrations/gitbook": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations-more.jpg",
+      "alt": "The Integrations page in Settings, scrolled to Product Management, Product Analytics, Document Management and Demo Automation",
+      "caption": "Further down the Integrations page: product management, product analytics, document management and demo automation."
+    },
+    "integrations/gamma": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations-more.jpg",
+      "alt": "The Integrations page in Settings, scrolled to Product Management, Product Analytics, Document Management and Demo Automation",
+      "caption": "Further down the Integrations page: product management, product analytics, document management and demo automation."
+    },
+    "integrations/google-drive": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations-more.jpg",
+      "alt": "The Integrations page in Settings, scrolled to Product Management, Product Analytics, Document Management and Demo Automation",
+      "caption": "Further down the Integrations page: product management, product analytics, document management and demo automation."
+    },
+    "integrations/consensus": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations-more.jpg",
+      "alt": "The Integrations page in Settings, scrolled to Product Management, Product Analytics, Document Management and Demo Automation",
+      "caption": "Further down the Integrations page: product management, product analytics, document management and demo automation."
+    },
+    "integrations/granola": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations-more.jpg",
+      "alt": "The Integrations page in Settings, scrolled to Product Management, Product Analytics, Document Management and Demo Automation",
+      "caption": "Further down the Integrations page: product management, product analytics, document management and demo automation."
+    },
+    "integrations/document-management": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations-more.jpg",
+      "alt": "The Integrations page in Settings, scrolled to Product Management, Product Analytics, Document Management and Demo Automation",
+      "caption": "Further down the Integrations page: product management, product analytics, document management and demo automation."
+    },
+    "integrations/product-management": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-integrations-more.jpg",
+      "alt": "The Integrations page in Settings, scrolled to Product Management, Product Analytics, Document Management and Demo Automation",
+      "caption": "Further down the Integrations page: product management, product analytics, document management and demo automation."
+    },
+    "admin/communication-channels": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-communication-channels.jpg",
+      "alt": "Communication Channel Auto Link Rules in Settings",
+      "caption": "Comm. Channels under Settings: rules that link Slack and Teams channels to deals by name."
+    },
+    "admin/basics": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-organization.jpg",
+      "alt": "Organization Settings in Opine, with the settings sidebar",
+      "caption": "Organization settings in Opine. The sidebar lists every settings page."
+    },
+    "ai/basics": {
+      "url": "https://akashagopine.github.io/opine-faq-videos/images/screens/settings-ai-configuration.jpg",
+      "alt": "AI Configuration in Settings, with personal and organization instructions",
+      "caption": "AI configuration under Settings: instructions Opine AI follows for you and for the organization."
+    }
+  },
+  "byTopic": {}
+}
