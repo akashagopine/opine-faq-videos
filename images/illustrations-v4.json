@@ -1,0 +1,876 @@
+{
+ "bySlug": {
+  "faq-what-is-the-difference-between-the-crm-view-and-the-opine-view-on-the-deal-board": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/deals-crm-view-vs-opine-view-v3.png",
+   "alt": "Two deal boards side by side with example stage names: the CRM view uses CRM pipeline stages, the Opine view starts with On Deck and then the Opine stages from Sales Process",
+   "caption": "Dragging a deal on the Opine board changes its Opine stage and never the CRM stage. On Deck holds pilot stage deals that have no plan yet."
+  },
+  "faq-what-data-sources-does-a-deal-summary-use-and-how-are-conflicts-handled": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/ai-deal-summary-sources-v3.png",
+   "alt": "Seven sources feeding a deal summary, including CRM records, email, channels, meeting transcripts and notes, calendar, evaluation data and documents, with the CRM arrow drawn thick",
+   "caption": "Every source adds context to the deal summary. The latest CRM status is the primary source for the current deal state."
+  },
+  "faq-what-s3-path-do-opine-exports-write-to": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/integrations-data-export-run-folders-v3.png",
+   "alt": "A Data Export job writing one folder per run under an S3 prefix, one file per query, and Snowflake loading the runs with COPY INTO",
+   "caption": "One folder per run and one file per query, under the prefix your loader reads."
+  },
+  "faq-why-did-my-integration-stop-syncing-and-how-do-i-fix-it": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/granola-authorization-row.png",
+   "alt": "The Granola row under Settings, Authorizations, with its Connect button",
+   "caption": "Your own Granola authorization sits under Settings, Authorizations. The control on the row connects or reconnects it."
+  },
+  "faq-who-can-generate-api-keys-and-where-do-i-create-or-revoke-them": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/api-keys-permission-row.png",
+   "alt": "The API keys row in Settings, Permissions: Admin holds Manage, Manager, Editor and Collaborator hold nothing",
+   "caption": "The API keys row sits in the Admin section of Settings, Permissions. A role with Manage on this row can generate and revoke keys."
+  },
+  "faq-how-does-opine-ai-link-my-calendar-meetings-to-deals-for-meeting-prep": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/features-meeting-matching-v2.png",
+   "alt": "A calendar event scored against each deal by attendee domains, a title bonus and a closed deal penalty, with the best deal scoring 15 or more winning, and a deal you set yourself always standing",
+   "caption": "Each deal is scored against the event. The best deal scoring 15 or more wins, and a deal you set yourself always stands."
+  },
+  "connect-external-mcp-server": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-mcp.png",
+   "alt": "Custom MCP Servers in Settings, with the register button and Active, Mine, Shared with me and All tabs",
+   "caption": "Custom MCP servers under Settings."
+  },
+  "export-data-to-own-s3": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-data-export.png",
+   "alt": "The Data Export page in Settings, with an S3 export job showing its schedule, destination and last run",
+   "caption": "Data Export under Settings, where export jobs are created, tested and run."
+  },
+  "export-opine-data-warehouse": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-data-export.png",
+   "alt": "The Data Export page in Settings, with an S3 export job showing its schedule, destination and last run",
+   "caption": "Data Export under Settings, where export jobs are created, tested and run."
+  },
+  "exporting-data-out-of-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-data-export.png",
+   "alt": "The Data Export page in Settings, with an S3 export job showing its schedule, destination and last run",
+   "caption": "Data Export under Settings, where export jobs are created, tested and run."
+  },
+  "faq-are-my-opine-sql-queries-saved-and-who-can-see-them": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/insights-opine-sql.png",
+   "alt": "The Opine SQL editor under Insights, with the table list on the left and the query editor on the right",
+   "caption": "The Opine SQL editor under Insights: tables, examples and functions on the left, the query and its results on the right."
+  },
+  "faq-can-i-copy-a-deep-link-to-a-specific-audit-log-entry": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-audit-log.png",
+   "alt": "The Audit Log in Settings, a table of time, user, activity and resource",
+   "caption": "The Audit Log under Settings."
+  },
+  "faq-can-i-customize-opine-ai-outputs-with-organization-and-personal-instructions": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-ai-configuration.png",
+   "alt": "AI Configuration in Settings, with Personal and Organization tabs and the personal context field",
+   "caption": "AI configuration under Settings: instructions Opine AI follows for you and for the organization."
+  },
+  "faq-can-i-turn-off-email-but-keep-slack-for-a-specific-notification-event": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-notifications.png",
+   "alt": "Notification Preferences in Settings, with Email, Slack and Teams tabs and one switch per event",
+   "caption": "Notification preferences under Settings, one switch per event and a tab per channel."
+  },
+  "faq-connect-crm": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations.png",
+   "alt": "The top of the Integrations page in Settings: CRM and Calendar",
+   "caption": "Integrations under Settings. CRM and calendar sit at the top, and each card opens that integration's own configuration."
+  },
+  "faq-do-changes-to-notification-preferences-save-automatically": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-notifications.png",
+   "alt": "Notification Preferences in Settings, with Email, Slack and Teams tabs and one switch per event",
+   "caption": "Notification preferences under Settings, one switch per event and a tab per channel."
+  },
+  "faq-do-i-need-to-be-an-engineer-to-use-opine-sql": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/insights-opine-sql.png",
+   "alt": "The Opine SQL editor under Insights, with the table list on the left and the query editor on the right",
+   "caption": "The Opine SQL editor under Insights: tables, examples and functions on the left, the query and its results on the right."
+  },
+  "faq-export-data": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-data-export.png",
+   "alt": "The Data Export page in Settings, with an S3 export job showing its schedule, destination and last run",
+   "caption": "Data Export under Settings, where export jobs are created, tested and run."
+  },
+  "faq-how-are-auto-link-rules-evaluated-and-what-happens-on-a-match": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-communication-channels.png",
+   "alt": "Communication Channel Auto-Link Rules in Settings",
+   "caption": "Comm. Channels under Settings: rules that link Slack and Teams channels to deals by name."
+  },
+  "faq-how-are-multiple-auto-link-rules-evaluated": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-communication-channels.png",
+   "alt": "Communication Channel Auto-Link Rules in Settings",
+   "caption": "Comm. Channels under Settings: rules that link Slack and Teams channels to deals by name."
+  },
+  "faq-how-do-i-access-ai-configuration": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-ai-configuration.png",
+   "alt": "AI Configuration in Settings, with Personal and Organization tabs and the personal context field",
+   "caption": "AI configuration under Settings: instructions Opine AI follows for you and for the organization."
+  },
+  "faq-how-do-i-access-notification-preferences": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-notifications.png",
+   "alt": "Notification Preferences in Settings, with Email, Slack and Teams tabs and one switch per event",
+   "caption": "Notification preferences under Settings, one switch per event and a tab per channel."
+  },
+  "faq-how-do-i-access-the-audit-log-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-audit-log.png",
+   "alt": "The Audit Log in Settings, a table of time, user, activity and resource",
+   "caption": "The Audit Log under Settings."
+  },
+  "faq-how-do-i-add-a-new-item-in-the-knowledge-base": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/knowledge-base.png",
+   "alt": "The Knowledge Base page in Opine, listing documents with type, categories, status and last refresh",
+   "caption": "The Knowledge Base, with each source, its type and when it was last refreshed."
+  },
+  "faq-how-do-i-add-content-to-the-knowledge-base": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/knowledge-base.png",
+   "alt": "The Knowledge Base page in Opine, listing documents with type, categories, status and last refresh",
+   "caption": "The Knowledge Base, with each source, its type and when it was last refreshed."
+  },
+  "faq-how-do-i-add-the-aha-oauth-credentials-in-opine-and-connect-it": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-how-do-i-configure-the-consensus-integration-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-demo.png",
+   "alt": "The Demo Automation group on the Integrations page, with Consensus",
+   "caption": "Demo automation sits at the bottom of the Integrations page."
+  },
+  "faq-how-do-i-configure-the-jira-integration-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-how-do-i-configure-the-linear-integration-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-how-do-i-connect-google-calendar-using-oauth-authorization-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations.png",
+   "alt": "The top of the Integrations page in Settings: CRM and Calendar",
+   "caption": "Integrations under Settings. CRM and calendar sit at the top, and each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-connect-google-drive-to-my-opine-organization": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-how-do-i-connect-microsoft-teams-to-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-calls.png",
+   "alt": "Call Recording and Chat integrations in Settings: Chorus, Clari, Gong, Granola, Microsoft Teams, Zoom and Slack",
+   "caption": "Call recording and chat integrations under Settings. Each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-connect-my-chorus-account-to-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-calls.png",
+   "alt": "Call Recording and Chat integrations in Settings: Chorus, Clari, Gong, Granola, Microsoft Teams, Zoom and Slack",
+   "caption": "Call recording and chat integrations under Settings. Each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-connect-notion-to-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-how-do-i-connect-or-disconnect-a-personal-integration": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-authorizations.png",
+   "alt": "The Authorizations page in Settings, where a person connects their own Jira and Granola accounts",
+   "caption": "Authorizations under Settings: your own connections to installed integrations."
+  },
+  "faq-how-do-i-connect-pendo-to-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-how-do-i-connect-posthog-so-product-usage-shows-on-the-deal-insights-tab": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-how-do-i-connect-posthog-to-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-how-do-i-connect-slack-to-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-calls.png",
+   "alt": "Call Recording and Chat integrations in Settings: Chorus, Clari, Gong, Granola, Microsoft Teams, Zoom and Slack",
+   "caption": "Call recording and chat integrations under Settings. Each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-connect-the-clari-integration-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-calls.png",
+   "alt": "Call Recording and Chat integrations in Settings: Chorus, Clari, Gong, Granola, Microsoft Teams, Zoom and Slack",
+   "caption": "Call recording and chat integrations under Settings. Each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-connect-the-gong-integration-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-calls.png",
+   "alt": "Call Recording and Chat integrations in Settings: Chorus, Clari, Gong, Granola, Microsoft Teams, Zoom and Slack",
+   "caption": "Call recording and chat integrations under Settings. Each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-connect-the-granola-integration-for-my-organization-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-calls.png",
+   "alt": "Call Recording and Chat integrations in Settings: Chorus, Clari, Gong, Granola, Microsoft Teams, Zoom and Slack",
+   "caption": "Call recording and chat integrations under Settings. Each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-connect-with-delegated-permissions-and-what-are-the-limitations": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations.png",
+   "alt": "The top of the Integrations page in Settings: CRM and Calendar",
+   "caption": "Integrations under Settings. CRM and calendar sit at the top, and each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-connect-zoom-to-opine-using-a-server-to-server-oauth-app": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-calls.png",
+   "alt": "Call Recording and Chat integrations in Settings: Chorus, Clari, Gong, Granola, Microsoft Teams, Zoom and Slack",
+   "caption": "Call recording and chat integrations under Settings. Each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-create-a-custom-deal-property": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-properties.png",
+   "alt": "The Properties page in Settings, with Deal, Account, Contact, Team Requests and Projects tabs and a list of properties",
+   "caption": "Properties under Settings, with a tab per object and each property's source, type and AI fill."
+  },
+  "faq-how-do-i-create-a-custom-property-for-deals-or-accounts": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-properties.png",
+   "alt": "The Properties page in Settings, with Deal, Account, Contact, Team Requests and Projects tabs and a list of properties",
+   "caption": "Properties under Settings, with a tab per object and each property's source, type and AI fill."
+  },
+  "faq-how-do-i-create-a-new-stage-in-the-sales-process": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-sales-process.png",
+   "alt": "The Sales Process page in Settings, with Stages and Processes tabs and the Opine stage groups",
+   "caption": "Sales Process under Settings, where Opine stages are arranged."
+  },
+  "faq-how-do-i-create-a-product-request-from-a-deal-or-the-product-requests-dashboard": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/requests.png",
+   "alt": "The Requests page in Opine, with Blocker, Important and Nice to have totals and a table of requests",
+   "caption": "The Requests page in Opine."
+  },
+  "faq-how-do-i-create-a-sales-process-and-auto-assign-deals-from-a-crm-pipeline": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-sales-process.png",
+   "alt": "The Sales Process page in Settings, with Stages and Processes tabs and the Opine stage groups",
+   "caption": "Sales Process under Settings, where Opine stages are arranged."
+  },
+  "faq-how-do-i-create-a-sales-process-and-choose-its-stages": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-sales-process.png",
+   "alt": "The Sales Process page in Settings, with Stages and Processes tabs and the Opine stage groups",
+   "caption": "Sales Process under Settings, where Opine stages are arranged."
+  },
+  "faq-how-do-i-create-a-webhook-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-webhooks.png",
+   "alt": "Webhook Registrations in Settings",
+   "caption": "Webhook registrations under Settings."
+  },
+  "faq-how-do-i-create-reorder-rename-or-delete-a-stage-in-sales-process": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-sales-process.png",
+   "alt": "The Sales Process page in Settings, with Stages and Processes tabs and the Opine stage groups",
+   "caption": "Sales Process under Settings, where Opine stages are arranged."
+  },
+  "faq-how-do-i-customize-the-structure-and-emphasis-of-deal-summaries": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-ai-deal-summary.png",
+   "alt": "Deal Summary Instructions on the Personal tab of AI Configuration in Settings",
+   "caption": "Deal summary instructions under AI configuration in Settings."
+  },
+  "faq-how-do-i-export-to-an-opine-managed-bucket-when-creating-a-data-export-job": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-data-export.png",
+   "alt": "The Data Export page in Settings, with an S3 export job showing its schedule, destination and last run",
+   "caption": "Data Export under Settings, where export jobs are created, tested and run."
+  },
+  "faq-how-do-i-filter-the-audit-log-by-activity-deal-or-user": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-audit-log.png",
+   "alt": "The Audit Log in Settings, a table of time, user, activity and resource",
+   "caption": "The Audit Log under Settings."
+  },
+  "faq-how-do-i-find-items-using-search-filters-and-saved-views-in-the-knowledge-base": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/knowledge-base.png",
+   "alt": "The Knowledge Base page in Opine, listing documents with type, categories, status and last refresh",
+   "caption": "The Knowledge Base, with each source, its type and when it was last refreshed."
+  },
+  "faq-how-do-i-grant-opine-access-to-new-notion-pages-after-connecting": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-how-do-i-import-content-from-a-url-into-the-knowledge-base": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/knowledge-base.png",
+   "alt": "The Knowledge Base page in Opine, listing documents with type, categories, status and last refresh",
+   "caption": "The Knowledge Base, with each source, its type and when it was last refreshed."
+  },
+  "faq-how-do-i-install-and-authorize-the-salesforce-integration-with-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations.png",
+   "alt": "The top of the Integrations page in Settings: CRM and Calendar",
+   "caption": "Integrations under Settings. CRM and calendar sit at the top, and each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-install-integrations-and-can-users-connect-their-own-calendar": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations.png",
+   "alt": "The top of the Integrations page in Settings: CRM and Calendar",
+   "caption": "Integrations under Settings. CRM and calendar sit at the top, and each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-keep-the-knowledge-base-healthy-so-ai-answers-stay-accurate": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/knowledge-base.png",
+   "alt": "The Knowledge Base page in Opine, listing documents with type, categories, status and last refresh",
+   "caption": "The Knowledge Base, with each source, its type and when it was last refreshed."
+  },
+  "faq-how-do-i-list-my-open-deals-sorted-by-amount": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/insights-opine-sql.png",
+   "alt": "The Opine SQL editor under Insights, with the table list on the left and the query editor on the right",
+   "caption": "The Opine SQL editor under Insights: tables, examples and functions on the left, the query and its results on the right."
+  },
+  "faq-how-do-i-map-linear-teams-to-opine-request-types": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-how-do-i-map-opine-request-types-to-a-notion-database-for-request-ticketing": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-how-do-i-map-opine-request-types-to-aha-products": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-how-do-i-open-and-use-the-opine-sql-editor": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/insights-opine-sql.png",
+   "alt": "The Opine SQL editor under Insights, with the table list on the left and the query editor on the right",
+   "caption": "The Opine SQL editor under Insights: tables, examples and functions on the left, the query and its results on the right."
+  },
+  "faq-how-do-i-push-evaluation-plan-details-to-hubspot-deal-properties": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations.png",
+   "alt": "The top of the Integrations page in Settings: CRM and Calendar",
+   "caption": "Integrations under Settings. CRM and calendar sit at the top, and each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-receive-opine-notifications-in-microsoft-teams": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-calls.png",
+   "alt": "Call Recording and Chat integrations in Settings: Chorus, Clari, Gong, Granola, Microsoft Teams, Zoom and Slack",
+   "caption": "Call recording and chat integrations under Settings. Each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-rotate-a-webhook-signing-secret": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-webhooks.png",
+   "alt": "Webhook Registrations in Settings",
+   "caption": "Webhook registrations under Settings."
+  },
+  "faq-how-do-i-run-my-first-opine-sql-query-to-see-open-deals-by-stage": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/insights-opine-sql.png",
+   "alt": "The Opine SQL editor under Insights, with the table list on the left and the query editor on the right",
+   "caption": "The Opine SQL editor under Insights: tables, examples and functions on the left, the query and its results on the right."
+  },
+  "faq-how-do-i-see-which-service-account-user-my-agent-uses": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/agents-list.png",
+   "alt": "The Agents page in Opine, with agent, run and credit totals and a table of agents with owner, triggers, status, cost and last run",
+   "caption": "The Agents page, with every agent, its status, cost and last run."
+  },
+  "faq-how-do-i-set-a-select-property-to-use-opine-users": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-properties.png",
+   "alt": "The Properties page in Settings, with Deal, Account, Contact, Team Requests and Projects tabs and a list of properties",
+   "caption": "Properties under Settings, with a tab per object and each property's source, type and AI fill."
+  },
+  "faq-how-do-i-set-company-matching-evidence-for-the-pendo-integration": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-how-do-i-set-up-auto-linking-between-slack-or-microsoft-teams-channels-and-deals": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-communication-channels.png",
+   "alt": "Communication Channel Auto-Link Rules in Settings",
+   "caption": "Comm. Channels under Settings: rules that link Slack and Teams channels to deals by name."
+  },
+  "faq-how-do-i-set-up-google-calendar-with-domain-wide-delegation-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations.png",
+   "alt": "The top of the Integrations page in Settings: CRM and Calendar",
+   "caption": "Integrations under Settings. CRM and calendar sit at the top, and each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-set-up-the-aha-integration-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-how-do-i-set-up-the-microsoft-outlook-integration-using-application-permissions": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations.png",
+   "alt": "The top of the Integrations page in Settings: CRM and Calendar",
+   "caption": "Integrations under Settings. CRM and calendar sit at the top, and each card opens that integration's own configuration."
+  },
+  "faq-how-do-i-test-and-enable-the-saml-connection-and-what-happens-after-enabling": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-security.png",
+   "alt": "The Security page in Settings: Domain, Hosting and SAML",
+   "caption": "Security under Settings: domain, hosting and SAML."
+  },
+  "faq-how-do-i-turn-editor-access-to-opine-sql-or-agent-authoring-on-or-off": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-permissions.png",
+   "alt": "The Permissions page in Settings, a matrix of capabilities by role",
+   "caption": "Permissions under Settings: what each role can do, capability by capability."
+  },
+  "faq-how-do-i-turn-notifications-on-or-off-for-a-specific-event-and-channel": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-notifications.png",
+   "alt": "Notification Preferences in Settings, with Email, Slack and Teams tabs and one switch per event",
+   "caption": "Notification preferences under Settings, one switch per event and a tab per channel."
+  },
+  "faq-how-do-i-use-opine-sql-ai-to-generate-queries": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/insights-opine-sql.png",
+   "alt": "The Opine SQL editor under Insights, with the table list on the left and the query editor on the right",
+   "caption": "The Opine SQL editor under Insights: tables, examples and functions on the left, the query and its results on the right."
+  },
+  "faq-how-do-i-verify-my-domain-for-saml-sso-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-security.png",
+   "alt": "The Security page in Settings: Domain, Hosting and SAML",
+   "caption": "Security under Settings: domain, hosting and SAML."
+  },
+  "faq-how-do-i-view-details-or-copy-a-link-to-an-audit-log-entry": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-audit-log.png",
+   "alt": "The Audit Log in Settings, a table of time, user, activity and resource",
+   "caption": "The Audit Log under Settings."
+  },
+  "faq-how-do-i-view-the-permissions-matrix-for-all-roles": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-permissions.png",
+   "alt": "The Permissions page in Settings, a matrix of capabilities by role",
+   "caption": "Permissions under Settings: what each role can do, capability by capability."
+  },
+  "faq-i-do-not-see-product-analytics-under-settings-integrations-how-do-i-enable-it": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations-more.png",
+   "alt": "Product Management, Product Analytics and Document Management integrations in Settings, including Jira, Linear, Notion, Pendo, PostHog, GitBook and Google Drive",
+   "caption": "Further down the Integrations page: product management, product analytics and document management."
+  },
+  "faq-opine-send-notification-who": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-notifications.png",
+   "alt": "Notification Preferences in Settings, with Email, Slack and Teams tabs and one switch per event",
+   "caption": "Notification preferences under Settings, one switch per event and a tab per channel."
+  },
+  "faq-schedule-recurring-data-extract": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-data-export.png",
+   "alt": "The Data Export page in Settings, with an S3 export job showing its schedule, destination and last run",
+   "caption": "Data Export under Settings, where export jobs are created, tested and run."
+  },
+  "faq-what-are-the-parts-of-the-opine-sql-editor": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/insights-opine-sql.png",
+   "alt": "The Opine SQL editor under Insights, with the table list on the left and the query editor on the right",
+   "caption": "The Opine SQL editor under Insights: tables, examples and functions on the left, the query and its results on the right."
+  },
+  "faq-what-are-the-roles-in-opine-and-what-can-each-one-do": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-permissions.png",
+   "alt": "The Permissions page in Settings, a matrix of capabilities by role",
+   "caption": "Permissions under Settings: what each role can do, capability by capability."
+  },
+  "faq-what-can-i-put-in-the-knowledge-base-and-what-file-types-can-i-upload": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/knowledge-base.png",
+   "alt": "The Knowledge Base page in Opine, listing documents with type, categories, status and last refresh",
+   "caption": "The Knowledge Base, with each source, its type and when it was last refreshed."
+  },
+  "faq-what-content-types-does-opine-support-and-when-should-i-use-each": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/knowledge-base.png",
+   "alt": "The Knowledge Base page in Opine, listing documents with type, categories, status and last refresh",
+   "caption": "The Knowledge Base, with each source, its type and when it was last refreshed."
+  },
+  "faq-what-details-does-each-audit-log-entry-show": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-audit-log.png",
+   "alt": "The Audit Log in Settings, a table of time, user, activity and resource",
+   "caption": "The Audit Log under Settings."
+  },
+  "faq-what-do-green-checks-and-not-enabled-rows-mean-on-the-permissions-page": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-permissions.png",
+   "alt": "The Permissions page in Settings, a matrix of capabilities by role",
+   "caption": "Permissions under Settings: what each role can do, capability by capability."
+  },
+  "faq-what-do-the-processing-status-badges-mean-and-when-is-an-item-retrievable": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/knowledge-base.png",
+   "alt": "The Knowledge Base page in Opine, listing documents with type, categories, status and last refresh",
+   "caption": "The Knowledge Base, with each source, its type and when it was last refreshed."
+  },
+  "faq-what-do-the-team-requests-statuses-mean": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/requests.png",
+   "alt": "The Requests page in Opine, with Blocker, Important and Nice to have totals and a table of requests",
+   "caption": "The Requests page in Opine."
+  },
+  "faq-what-does-hide-closed-deals-in-opine-view-do-and-who-can-change-it": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-sales-process.png",
+   "alt": "The Sales Process page in Settings, with Stages and Processes tabs and the Opine stage groups",
+   "caption": "Sales Process under Settings, where Opine stages are arranged."
+  },
+  "faq-what-file-formats-can-i-upload-to-the-knowledge-base-and-what-is-the-size-limit": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/knowledge-base.png",
+   "alt": "The Knowledge Base page in Opine, listing documents with type, categories, status and last refresh",
+   "caption": "The Knowledge Base, with each source, its type and when it was last refreshed."
+  },
+  "faq-what-is-the-library-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-template-library.png",
+   "alt": "The Template Library in Settings: Plans, Playbooks, Success Criteria, Notes, Requests and Documents",
+   "caption": "The Template Library under Settings."
+  },
+  "faq-what-notification-event-categories-are-available-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-notifications.png",
+   "alt": "Notification Preferences in Settings, with Email, Slack and Teams tabs and one switch per event",
+   "caption": "Notification preferences under Settings, one switch per event and a tab per channel."
+  },
+  "faq-what-should-the-pattern-include-in-an-auto-link-rule": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-communication-channels.png",
+   "alt": "Communication Channel Auto-Link Rules in Settings",
+   "caption": "Comm. Channels under Settings: rules that link Slack and Teams channels to deals by name."
+  },
+  "faq-when-should-i-use-new-document-vs-new-snippet-vs-new-q-a": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/knowledge-base.png",
+   "alt": "The Knowledge Base page in Opine, listing documents with type, categories, status and last refresh",
+   "caption": "The Knowledge Base, with each source, its type and when it was last refreshed."
+  },
+  "faq-where-can-i-find-more-opine-sql-example-queries": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/insights-opine-sql.png",
+   "alt": "The Opine SQL editor under Insights, with the table list on the left and the query editor on the right",
+   "caption": "The Opine SQL editor under Insights: tables, examples and functions on the left, the query and its results on the right."
+  },
+  "faq-where-do-i-create-and-manage-opine-agents": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/agents-list.png",
+   "alt": "The Agents page in Opine, with agent, run and credit totals and a table of agents with owner, triggers, status, cost and last run",
+   "caption": "The Agents page, with every agent, its status, cost and last run."
+  },
+  "faq-where-do-i-find-opine-sql-and-how-do-i-run-my-first-query": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/insights-opine-sql.png",
+   "alt": "The Opine SQL editor under Insights, with the table list on the left and the query editor on the right",
+   "caption": "The Opine SQL editor under Insights: tables, examples and functions on the left, the query and its results on the right."
+  },
+  "faq-where-do-i-find-permissions-and-change-editor-authoring-or-opine-sql-access": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-permissions.png",
+   "alt": "The Permissions page in Settings, a matrix of capabilities by role",
+   "caption": "Permissions under Settings: what each role can do, capability by capability."
+  },
+  "faq-where-do-i-find-the-knowledge-base-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/knowledge-base.png",
+   "alt": "The Knowledge Base page in Opine, listing documents with type, categories, status and last refresh",
+   "caption": "The Knowledge Base, with each source, its type and when it was last refreshed."
+  },
+  "faq-where-do-i-find-the-opine-sql-editor-and-what-if-i-cannot-see-it": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/insights-opine-sql.png",
+   "alt": "The Opine SQL editor under Insights, with the table list on the left and the query editor on the right",
+   "caption": "The Opine SQL editor under Insights: tables, examples and functions on the left, the query and its results on the right."
+  },
+  "faq-where-do-i-manage-data-export-jobs-in-opine-and-what-actions-are-available": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-data-export.png",
+   "alt": "The Data Export page in Settings, with an S3 export job showing its schedule, destination and last run",
+   "caption": "Data Export under Settings, where export jobs are created, tested and run."
+  },
+  "faq-which-calendars-are-supported-and-what-features-do-they-power": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-integrations.png",
+   "alt": "The top of the Integrations page in Settings: CRM and Calendar",
+   "caption": "Integrations under Settings. CRM and calendar sit at the top, and each card opens that integration's own configuration."
+  },
+  "faq-which-notification-channels-are-available-and-what-enables-slack-or-teams": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-notifications.png",
+   "alt": "Notification Preferences in Settings, with Email, Slack and Teams tabs and one switch per event",
+   "caption": "Notification preferences under Settings, one switch per event and a tab per channel."
+  },
+  "faq-which-tables-can-i-query-with-opine-sql": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/insights-opine-sql.png",
+   "alt": "The Opine SQL editor under Insights, with the table list on the left and the query editor on the right",
+   "caption": "The Opine SQL editor under Insights: tables, examples and functions on the left, the query and its results on the right."
+  },
+  "faq-who-can-access-products-settings-and-how-do-i-open-it": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-products.png",
+   "alt": "The Products page in Settings",
+   "caption": "Products under Settings."
+  },
+  "faq-who-can-configure-saml-sso-and-where-do-i-find-identity-access-settings": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-security.png",
+   "alt": "The Security page in Settings: Domain, Hosting and SAML",
+   "caption": "Security under Settings: domain, hosting and SAML."
+  },
+  "faq-who-can-edit-sales-process-stages-and-toggle-hide-closed-deals-in-opine-view": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-sales-process.png",
+   "alt": "The Sales Process page in Settings, with Stages and Processes tabs and the Opine stage groups",
+   "caption": "Sales Process under Settings, where Opine stages are arranged."
+  },
+  "faq-who-can-use-opine-properties-and-where-do-i-access-it": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-properties.png",
+   "alt": "The Properties page in Settings, with Deal, Account, Contact, Team Requests and Projects tabs and a list of properties",
+   "caption": "Properties under Settings, with a tab per object and each property's source, type and AI fill."
+  },
+  "faq-why-do-i-not-see-slack-or-microsoft-teams-as-notification-channels": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-notifications.png",
+   "alt": "Notification Preferences in Settings, with Email, Slack and Teams tabs and one switch per event",
+   "caption": "Notification preferences under Settings, one switch per event and a tab per channel."
+  },
+  "no-native-integration-options": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-webhooks.png",
+   "alt": "Webhook Registrations in Settings",
+   "caption": "Webhook registrations under Settings."
+  },
+  "faq-agent-approvals": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-tools-approval.png",
+   "alt": "Agent editor, Tools & Skills section",
+   "caption": "Tools in the agent editor. A tool that writes can run after approval, with named approvers."
+  },
+  "faq-can-i-create-new-consensus-demos-from-within-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/deal-file-center-menu.png",
+   "alt": "Deal page File Center",
+   "caption": "A deal's File Center and its + File menu."
+  },
+  "faq-can-i-export-opine-data-to-my-warehouse-and-which-destination-is-supported": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-data-export.png",
+   "alt": "The Data Export page in Settings, with an S3 export job showing its schedule, destination and last run",
+   "caption": "Data Export under Settings, where export jobs are created, tested and run."
+  },
+  "faq-does-opine-support-jira-product-discovery-with-product-requests": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/jira-configuration.png",
+   "alt": "Jira configuration page",
+   "caption": "The Jira configuration page, with the Jira Site field and Jira Product Discovery switch."
+  },
+  "faq-happens-ai-proposes-sensitive": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-tools-approval.png",
+   "alt": "Agent editor, Tools & Skills section",
+   "caption": "Tools in the agent editor. A tool that writes can run after approval, with named approvers."
+  },
+  "faq-how-do-agent-runs-work-and-where-do-i-see-run-history": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-run-history.png",
+   "alt": "Agents Run History page",
+   "caption": "Run History under Agents: every run with its status, trigger, deal, credits and duration."
+  },
+  "faq-how-do-approvals-for-ai-actions-work-and-how-do-i-change-tool-permissions": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-tools-approval.png",
+   "alt": "Agent editor, Tools & Skills section",
+   "caption": "Tools in the agent editor. A tool that writes can run after approval, with named approvers."
+  },
+  "faq-how-do-deal-proxy-votes-in-aha-ideas-work-with-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/aha-configuration.png",
+   "alt": "Aha! configuration page",
+   "caption": "The Aha! configuration page: OAuth credentials and the proxy vote switches."
+  },
+  "faq-how-do-i-change-the-opine-theme": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/settings-profile.png",
+   "alt": "Settings, User Preferences",
+   "caption": "User Preferences under Settings, including the theme."
+  },
+  "faq-how-do-i-choose-the-jira-site-to-authorize-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/jira-configuration.png",
+   "alt": "Jira configuration page",
+   "caption": "The Jira configuration page, with the Jira Site field and Jira Product Discovery switch."
+  },
+  "faq-how-do-i-connect-my-personal-granola-account-to-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/granola-authorization-row.png",
+   "alt": "The Granola row under Settings, Authorizations, with its Connect button",
+   "caption": ""
+  },
+  "faq-how-do-i-create-a-document-template-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/document-templates.png",
+   "alt": "Document Templates page",
+   "caption": "Document Templates, with the + Template button."
+  },
+  "faq-how-do-i-create-a-new-plan-template": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/plan-templates.png",
+   "alt": "All Templates page (plan templates)",
+   "caption": "Plan templates, with the + Template button."
+  },
+  "faq-how-do-i-create-a-new-play-in-the-playbook": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/playbook.png",
+   "alt": "Playbook page",
+   "caption": "The Playbook, with the + Play button."
+  },
+  "faq-how-do-i-create-a-new-success-criterion-in-the-criteria-library": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/success-criteria-library.png",
+   "alt": "Success Criteria Library page",
+   "caption": "The Success Criteria Library, with a criterion open in the detail panel."
+  },
+  "faq-how-do-i-create-a-note-template-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/note-templates.png",
+   "alt": "Note Templates page",
+   "caption": "Note Templates, with the Add New button."
+  },
+  "faq-how-do-i-create-a-standalone-service-account-user": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/settings-service-accounts.png",
+   "alt": "Settings, Members & Teams, Service Accounts tab",
+   "caption": "Service accounts under Settings, Members & Teams."
+  },
+  "faq-how-do-i-edit-duplicate-or-delete-a-plan-template": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/plan-templates.png",
+   "alt": "All Templates page (plan templates)",
+   "caption": "Plan templates, with the + Template button."
+  },
+  "faq-how-do-i-enable-a-skill-on-an-agent": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-skills-review.png",
+   "alt": "Agent editor",
+   "caption": "Skills and the Review section of the agent editor."
+  },
+  "faq-how-do-i-generate-a-criterion-from-external-documentation-with-opine-ai": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/success-criteria-library.png",
+   "alt": "Success Criteria Library page",
+   "caption": "The Success Criteria Library, with a criterion open in the detail panel."
+  },
+  "faq-how-do-i-grant-toolkits-to-an-agent": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-tools-approval.png",
+   "alt": "Agent editor, Tools & Skills section",
+   "caption": "Tools in the agent editor. A tool that writes can run after approval, with named approvers."
+  },
+  "faq-how-do-i-let-an-agent-update-deal-properties-with-guardrails": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-tools-approval.png",
+   "alt": "Agent editor, Tools & Skills section",
+   "caption": "Tools in the agent editor. A tool that writes can run after approval, with named approvers."
+  },
+  "faq-how-do-i-link-an-unmatched-product-usage-account-to-a-company": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/pendo-unmatched-accounts.png",
+   "alt": "Pendo configuration page",
+   "caption": "Unmatched Accounts on the Pendo configuration page."
+  },
+  "faq-how-do-i-link-google-drive-documents-to-a-deal-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/deal-file-center-menu.png",
+   "alt": "Deal page File Center",
+   "caption": "A deal's File Center and its + File menu."
+  },
+  "faq-how-do-i-manage-which-opine-notifications-i-get-in-teams": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-notifications.png",
+   "alt": "Notification Preferences in Settings, with Email, Slack and Teams tabs and one switch per event",
+   "caption": "Notification preferences under Settings, one switch per event and a tab per channel."
+  },
+  "faq-how-do-i-require-approval-before-an-agent-takes-actions-from-a-toolkit": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-tools-approval.png",
+   "alt": "Agent editor, Tools & Skills section",
+   "caption": "Tools in the agent editor. A tool that writes can run after approval, with named approvers."
+  },
+  "faq-how-do-i-restrict-which-crm-fields-an-agent-can-update": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-tools-approval.png",
+   "alt": "Agent editor, Tools & Skills section",
+   "caption": "Tools in the agent editor. A tool that writes can run after approval, with named approvers."
+  },
+  "faq-how-do-i-see-which-plans-use-a-criterion-and-what-scores-it-received": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/success-criteria-library.png",
+   "alt": "Success Criteria Library page",
+   "caption": "The Success Criteria Library, with a criterion open in the detail panel."
+  },
+  "faq-how-do-i-set-my-working-hours-for-team-requests": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/settings-profile.png",
+   "alt": "Settings, User Preferences",
+   "caption": "User Preferences under Settings, including the theme."
+  },
+  "faq-how-do-i-set-up-a-schedule-trigger-for-an-agent": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-trigger.png",
+   "alt": "Agent editor, Trigger section",
+   "caption": "The Trigger section of the agent editor: schedule, event, manual or webhook, and the deal scope."
+  },
+  "faq-how-do-i-update-the-opine-slack-app-permissions": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/slack-configuration.png",
+   "alt": "Slack configuration page",
+   "caption": "The Slack configuration page, with Update Permissions."
+  },
+  "faq-how-do-i-upload-a-skill-from-a-zip-and-what-must-it-include": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/settings-agent-skills.png",
+   "alt": "Settings, Agent Skills",
+   "caption": "Agent Skills under Settings, with Upload from zip and Create skill."
+  },
+  "faq-how-do-i-use-a-note-template-when-creating-a-note-on-a-deal": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/deal-note-template-picker.png",
+   "alt": "Deal note editor slide-over",
+   "caption": "A new note on a deal, with the template picker."
+  },
+  "faq-how-do-labels-and-group-by-labels-work-in-the-criteria-library": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/success-criteria-library.png",
+   "alt": "Success Criteria Library page",
+   "caption": "The Success Criteria Library, with a criterion open in the detail panel."
+  },
+  "faq-how-do-validation-rules-work-and-how-do-i-create-one": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/properties-validation-rules.png",
+   "alt": "Settings, Properties",
+   "caption": "Validation rules under Settings, Properties."
+  },
+  "faq-how-does-the-next-step-field-work-in-the-hubspot-integration": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/hubspot-crm-enrichment.png",
+   "alt": "HubSpot configuration page, CRM Enrichment card",
+   "caption": "CRM Enrichment on the HubSpot configuration page, including the Next Step property."
+  },
+  "faq-what-are-document-templates-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/document-templates.png",
+   "alt": "Document Templates page",
+   "caption": "Document Templates, with the + Template button."
+  },
+  "faq-what-are-note-templates-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/note-templates.png",
+   "alt": "Note Templates page",
+   "caption": "Note Templates, with the Add New button."
+  },
+  "faq-what-are-the-four-pieces-of-an-agent-and-what-does-each-control": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-basics.png",
+   "alt": "New agent editor, Basics section",
+   "caption": "The Basics section of the agent editor: name, owner, approval timeout, Run as and manual run settings."
+  },
+  "faq-what-can-i-configure-at-the-organization-level-for-ai": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/settings-ai-organization.png",
+   "alt": "Settings, AI Configuration, Organization tab",
+   "caption": "The Organization tab of AI Configuration under Settings."
+  },
+  "faq-what-can-i-do-with-the-consensus-integration-inside-a-deal": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/deal-file-center-menu.png",
+   "alt": "Deal page File Center",
+   "caption": "A deal's File Center and its + File menu."
+  },
+  "faq-what-features-become-available-after-i-connect-google-drive-to-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/deal-file-center-menu.png",
+   "alt": "Deal page File Center",
+   "caption": "A deal's File Center and its + File menu."
+  },
+  "faq-what-is-the-criteria-library-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/success-criteria-library.png",
+   "alt": "Success Criteria Library page",
+   "caption": "The Success Criteria Library, with a criterion open in the detail panel."
+  },
+  "faq-what-resource-types-and-actions-do-opine-webhooks-support": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/webhook-create-dialog.png",
+   "alt": "Create webhook registration dialog",
+   "caption": "Creating a webhook registration, with the resource types it supports."
+  },
+  "faq-what-schedule-scopes-are-available-and-how-many-runs-does-each-create": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-trigger.png",
+   "alt": "Agent editor, Trigger section",
+   "caption": "The Trigger section of the agent editor: schedule, event, manual or webhook, and the deal scope."
+  },
+  "faq-where-can-i-review-the-organization-audit-log": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-audit-log.png",
+   "alt": "The Audit Log in Settings, a table of time, user, activity and resource",
+   "caption": "The Audit Log under Settings."
+  },
+  "faq-where-do-i-configure-my-notification-preferences": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v3/settings-notifications.png",
+   "alt": "Notification Preferences in Settings, with Email, Slack and Teams tabs and one switch per event",
+   "caption": "Notification preferences under Settings, one switch per event and a tab per channel."
+  },
+  "faq-where-do-i-enter-my-zoom-account-id-client-id-and-client-secret-in-opine": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/zoom-configuration.png",
+   "alt": "Zoom configuration page",
+   "caption": "The Zoom configuration page: Account ID, Client ID and Client Secret."
+  },
+  "faq-where-do-i-find-test-run-results-and-activity-logs": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-run-history.png",
+   "alt": "Agents Run History page",
+   "caption": "Run History under Agents: every run with its status, trigger, deal, credits and duration."
+  },
+  "faq-where-do-i-manage-team-members-and-invitations": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/settings-members.png",
+   "alt": "Settings, Members & Teams",
+   "caption": "Members under Settings, Members & Teams."
+  },
+  "faq-where-do-i-write-agent-instructions-and-how-are-they-used-at-run-time": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-prompt.png",
+   "alt": "Agent editor, Prompt section",
+   "caption": "The Prompt section of the agent editor, where the agent's instructions go."
+  },
+  "faq-where-in-opine-do-i-enter-the-chorus-api-token-and-save-it": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/chorus-configuration.png",
+   "alt": "Chorus configuration page",
+   "caption": "The Chorus configuration page, where the API token goes."
+  },
+  "faq-where-in-opine-does-pendo-usage-appear": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/deal-insights-buyer-engagement.png",
+   "alt": "Deal page Insights tab",
+   "caption": "Buyer Engagement on a deal's Insights tab. Example deal."
+  },
+  "faq-which-agent-capabilities-are-always-on-and-which-must-i-enable-in-tools": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-tools-approval.png",
+   "alt": "Agent editor, Tools & Skills section",
+   "caption": "Tools in the agent editor. A tool that writes can run after approval, with named approvers."
+  },
+  "faq-who-can-change-which-service-account-user-an-agent-runs-as": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-basics.png",
+   "alt": "New agent editor, Basics section",
+   "caption": "The Basics section of the agent editor: name, owner, approval timeout, Run as and manual run settings."
+  },
+  "faq-why-can-t-my-agent-send-slack-messages-after-i-enable-slack-messages": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-tools-approval.png",
+   "alt": "Agent editor, Tools & Skills section",
+   "caption": "Tools in the agent editor. A tool that writes can run after approval, with named approvers."
+  },
+  "faq-why-does-slack-messages-or-teams-messages-not-appear-in-the-tools-panel": {
+   "url": "https://akashagopine.github.io/opine-faq-videos/images/screens-v4/agent-editor-tools-approval.png",
+   "alt": "Agent editor, Tools & Skills section",
+   "caption": "Tools in the agent editor. A tool that writes can run after approval, with named approvers."
+  }
+ },
+ "byGroup": {},
+ "byTopic": {}
+}
